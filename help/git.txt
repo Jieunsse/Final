@@ -6,11 +6,9 @@
 6. git add . >> 한꺼번에 전부 등록  /  git add 파일명 >> 한개씩 등록. [스테이지 등록]
 7. git checkout -b master >> 원격 저장소로 경로 지정.
 8. git commit -m "" >> 스테이지에 올라온 파일을 커밋.
-9. git push origin master >> 커밋된 파일을 원격 저장소(깃허브)에 등록.
+9. git push origin main >> 커밋된 파일을 원격 저장소(깃허브)에 등록.
 
 git branch : 현재 브랜치 목록 확인
 현재 브랜치에 *이 붙음.
 
 git branch 브랜치명 : 브랜치 생성
-
-add
