@@ -12,3 +12,5 @@ git branch : 현재 브랜치 목록 확인
 현재 브랜치에 *이 붙음.
 
 git branch 브랜치명 : 브랜치 생성
+
+add
