@@ -42,7 +42,7 @@ public:
 
 void addWord() {
     dictionary<int> num;
-    int wordQuantity;
+    int wordQuantity;   // 저장할 단어의 개수를 저장할 변수.
 
 
     // 단어 개수 입력 받기.
@@ -58,14 +58,15 @@ void addWord() {
        
        
         cout << "단어의 철자를 입력해 주세요 : " << endl;
+        cin.ignore();
         getline(cin, spell[wordQuantity]);
         word.setWord(spell[wordQuantity]);
-
-        cout << word.getWord();
         
     }
-    
+  
 }
+
+
 
 
 
