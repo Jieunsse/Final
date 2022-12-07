@@ -23,10 +23,12 @@ int main() {
 
     menu();
 
-
+    addWord();
 
     return 0;
 } 
+
+
 
 
 
