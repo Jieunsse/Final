@@ -3,6 +3,7 @@
 #include <string>
 #include "ASCII.h"
 #include "menu.h"
+#include "word.h"
 using namespace std;
 
 
@@ -21,6 +22,8 @@ using namespace std;
 int main() {
 
     menu();
+
+
 
     return 0;
 } 
