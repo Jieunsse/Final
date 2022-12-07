@@ -49,7 +49,7 @@ void addWord() {
     cout << "저장하고 싶은 단어의 개수를 입력해 주세요 : " << endl;
     cin >> wordQuantity;    // 입력받은 개수 저장.
     num.setNum(wordQuantity);    // T num에 입력받은 개수 저장.
-    cout << "입력하신 단어의 개수는 : " << wordQuantity << " 개 입니다.\n";
+    
    
     // 단어의 스펠링 입력받기.
     for(int i=0; i<wordQuantity; i++) {
@@ -57,7 +57,7 @@ void addWord() {
         string spell[wordQuantity];
        
        
-        cout << "단어의 철자를 입력해 주세요 :" << endl;
+        cout << "단어의 철자를 입력해 주세요 : " << endl;
         getline(cin, spell[wordQuantity]);
         word.setWord(spell[wordQuantity]);
 
