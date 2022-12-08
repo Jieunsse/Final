@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <string>
 #include "ASCII.h"
-#include "menu.h"
+#include "title.h"
 #include "word.h"
 using namespace std;
 
@@ -21,12 +20,46 @@ using namespace std;
 
 int main() {
 
-    menu();
+    // 프로그램의 타이틀 출력하는 함수. ("title.h", "ASCII.h"에 구현됨.)
+    printTitle();    
 
-    addWord();
 
+    // 메뉴를 출력하고 사용자가 원하는 메뉴를 입력받기.
+    int menuNum;     // 사용자가 입력한 메뉴를 저장하는 변수.
+    
+    cout << "원하는 메뉴를 선택해 주세요! :) \n" << endl;
+    cout << " 1. 단어 등록하기 \n" << endl;
+    cout << " 2. 단어 검색하기 \n" << endl;
+    cout << " 3. 단어 시험보기 \n" << endl;
+    cout << " 4. 등록된 단어목록 확인하기 \n" << endl;
+    cout << " 5. 도움말 살펴보기 \n" << endl;
+    cout << " 0. 프로그램 종료하기 \n" << endl;
+
+    cout << "원하는 메뉴를 입력해 주세요 : \n" << endl;
+    cin >> menuNum;
+    
+
+    // 인덱스에 따른 메뉴 실행.
+
+    if(menuNum == 1) {          // 단어 등록하기
+        addWord();  // "word.h"
+    } else if (menuNum == 2) {  // 단어 검색하기
+
+    } else if (menuNum == 3) {  // 단어 시험보기
+        
+    } else if (menuNum == 4) {  // 등록된 단어목록 확인하기
+
+    } else if (menuNum == 5) {  // 도움말 살펴보기
+
+    } else if (menuNum == 0) {  // 프로그램 종료하기
+        cout << "\n" << "프로그램을 종료합니다 :) " << endl;
+    } else cout << "잘못된 입력입니다. " << endl;
+   
     return 0;
+
 } 
+
+
 
 
 

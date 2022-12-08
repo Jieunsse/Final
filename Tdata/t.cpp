@@ -1,26 +1,27 @@
 #include <iostream>
 using namespace std;
 
-template <typename T>
+template <typename T>	// 타입 치환 변수 사용하기 위해 선언.
 
 class Box {
 
 public:
-	T data;
+
+	T data;		// T 변수명;
 
 	Box(T value = 0) {	// 디폴트 매개변수를 주면, 객체 생성시 값을 주지 않아도 됨.
-		data = value;
+		data = value;	// 파라미터를 data에 할당.
 	}
 
-	void print() {
+	void print() {	// data를 출력하는 함수.
 		cout << "Data : " << data << endl;
 	}
 
-	T getData() {
+	T getData() {	// Data에 대한 getter 함수.
 		return data;
 	}
 
-	void setData(T value) {
+	void setData(T value) {	// Data에 대한 setter 함수.
 		data = value;
 	}
 
@@ -29,15 +30,15 @@ public:
 
 int main() {
 
-	Box<int> intBox(7);	// 디폴트 매개변수 설정을 하지 않았다면 다음과 같이 파라미터를 줘야 함.
-	intBox.data = 8;
-	intBox.print();
-	intBox.setData(11);
+	Box<int> intBox;		// 메인에서 사용할 변수 만들고.
+	intBox.data = 8;		// data에 8 할당.
+	intBox.print();			// data 출력
+	intBox.setData(11);		// data값에 11 할당.
 
 	cout << "Data : " << intBox.getData() << endl;
 
 
-	Box<char> charBox('#');
+	Box<char> charBox('#');	// 디폴트 매개변수 설정을 하지 않았다면 다음과 같이 파라미터를 줘야 함.
 	charBox.print();
 	charBox.setData('&');
 

@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+// 영어단어를 검색하면 해당 단어의 뜻을 출력하는 기능 구현하기. 
 
 
 
