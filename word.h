@@ -52,7 +52,7 @@ void addWord() {
     num.setNum(wordCnt);    // T num에 입력받은 개수 저장.
     
    
-    // 단어의 스펠링 입력받기.
+    // 단어의 스펠링, 뜻 입력받기.
 
     for(int i=0; i<wordCnt; i++) {
         dictionary<string> word;
